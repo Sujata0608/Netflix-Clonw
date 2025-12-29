@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/Images/bg.jpg");
+
+    /* so that the content stays in the middle or the middle of the image is shown */
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* to create the zoom like effect for re-sizing of the background */
+    background-size: max(1400px, 100vw);
+
+    height: 80vh;
+    position: relative;
+}
+
+.main .box {
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+    /* height: 100%; */
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+
+    /* to use it to bring the things inside navbar in the middle along with the help of margin:auto */
+    max-width: 70vw;
+    margin: auto;
+    /* height: 62px; */
+    height: 100px;
+    
+
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* to bring netflix logo & buttons to the surface, using z-indexing */
+nav img {
+    color: red;
+    width: 148px;
+    position: relative;
+
+    /* z-index only works on positioned elements */
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+
+    height: calc(100% - 100px);
+    /* height: calc(100% - 62px); */
+
+    /* to make the height end where the main is ending */
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    /* top: 62px; */
+    /* z-index: 10; */
+    gap: 30px;
+    padding: 0 23px;
+
+
+
+}
+
+.hero> :first-child {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+
+    /* the block is done so that for different screen, it breaks into multiple lines, white-space:normal allows for text-wrapping*/
+    /* display: block;
+    white-space: normal;
+    width: 50%; */
+    text-align: center;
+
+
+}
+
+.hero>:nth-child(2) {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.separation {
+    height: 6px;
+    background-color: rgb(46, 44, 44);
+}
+
+
+.main input {
+    padding: 15px 58px 16px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid rgba(246, 238, 238, 0.4);
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    font-weight: 700;
+    /* font-weight: 100; */
+    
+}
+
+.main input::placeholder {
+    color: white;
+    /* Sets the text color to white */
+    opacity: 0.8;
+    /* Ensures full opacity (some browsers default to a lower opacity) */
+    font-weight: 400;
+    /* Makes the text bolder */
+    /* You can add more styles to make it "pop": */
+    
+    /* text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);  */
+    /* Subtle glow effect */
+}
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: transparent;
+    color: white;
+    border: 1px solid grey;
+
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    font-weight: 600;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    border-style: none;
+    font-weight: 500;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+.secImg{
+    position:relative;
+    padding-top: 6px;
+}
+
+.secImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    position: absolute;
+    top: 51px;
+    right: 0;
+    /* left: 10px; */
+    width: 26vw;
+}
+.first > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.first > div :first-child{
+    font-size: 30px;
+    font-weight: bold;
+}
+.first > div :nth-child(2){
+    font-size: 12px;
+     font-family: "Poppins", sans-serif;
+}
+.faq h2{
+    text-align: center;
+    /* font-size: 48px; */
+    
+    
+}
+
+.faq{
+    background-color: black;
+    color: white;
+    /* width: 40vw; */
+    margin: auto;
+   
+    padding: 34px;
+    font-size: 24px;
+    
+}
+.faqbox{
+    
+    transition: all 1s ease-out; /* This is the key for the smooth effect */
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color:#2d2d2d;
+    width: 60vw;
+    margin: 7px auto;
+    padding: 24px;
+    cursor:pointer;
+}
+
+.faqbox:hover{
+    background-color: #414141;
+    /* background-color: rgb(71, 68, 68); */
+   color: white;
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+  
+}
+footer .Questions{
+   /* color: red; */
+   display: inline-block;
+   /* margin-top: 20px; */
+   font-size: 16px;
+   padding: 34px 0;
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    gap:15px;
+   
+}
+
+a{
+    color: white;
+    font-size: 14px;
+}
